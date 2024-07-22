@@ -28,8 +28,8 @@ nav{
    top:0;
    z-index:100;
 }
-.logo{
-    
+.logo {
+    background-color: #1876f2;
     width:60px;
     height: 10vh;
     margin-left: 10px;
@@ -48,14 +48,20 @@ nav{
     align-items: center;
 
 }
+.nav-left img{
+    width:50px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
 .nav-left ul li{
     list-style: none;
     display:inline-block;
 }
-.nav-left ul li img{
-    width:28px;
-    margin:0 20px;
-    padding-left: 10px;
+.nav-left ul li i{
+    
+    width:80px;
+    padding-left: 20px;
+    color: #fff;
 }
 .user-icon img{
     width:70px;
@@ -533,6 +539,8 @@ nav{
    .left-row{
     display: flex;
     align-items: flex-start;
+    
+
     }
    .left-img{
     width:100px;
@@ -598,6 +606,8 @@ nav{
 
 .info-col{
     flex-basis: 33%;
+    position: sticky;
+    top:70px;
 }
 .post-col{
     flex-basis: 65%;
@@ -710,9 +720,13 @@ nav{
         font-size: 30px;
         margin-right: 20px;
      }
-     .nav-left ul li img{
-        width:30px;
-        margin:0 8px;
+     .nav-left img{
+         width:30px;
+     }
+     .nav-icons li {
+        width:40px;
+        background-color: #41db51;
+        
      }
      .user-icon img{
         width:45px;
@@ -732,6 +746,7 @@ nav{
 
 /*-----media profile----*/
 @media(max-width:900px){
+    
     .profile-container{
         padding:20px 5%;
     }
